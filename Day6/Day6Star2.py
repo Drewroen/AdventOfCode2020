@@ -1,7 +1,6 @@
 f = open("Day6.txt", "r")
 
 answers = list(f.read().split('\n\n'))
-# answers = list(map(lambda group: ''.join(group.split('\n')), list(f.read().split('\n\n'))))
 
 answer_sum = 0
 
@@ -20,5 +19,5 @@ for answer in answers:
 
         if count == expected_answer_count:
             answer_sum = answer_sum + 1
-
+O
 print(answer_sum)
